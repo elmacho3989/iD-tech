@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "examplemod:aviation_light":
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 6767414154,
+    "spacing": 7,
+    "seperation":4,
+    "type": "minecraft:random_spread"
+  }
+
+}

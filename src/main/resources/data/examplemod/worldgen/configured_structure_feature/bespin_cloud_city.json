@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "_comment": "path to the templete pool json file",
+    "start_pool": "examplemod:bespin_cloud_city/start_pool",
+
+    "_comment": "This is how many pieces away from the starting piece a piece of the structure can spawn think of it like the length of the branch of the structure",
+    "size": 2
+  },
+  "biomes": "#examplemod:has_structure/bespin_cloud_city"
+}
