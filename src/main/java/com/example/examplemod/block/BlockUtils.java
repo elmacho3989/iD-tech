@@ -1,6 +1,6 @@
-package com.idtech.block;
+package com.example.examplemod.block;
 
-import com.idtech.BaseMod;
+import com.example.examplemod.BaseMod;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;

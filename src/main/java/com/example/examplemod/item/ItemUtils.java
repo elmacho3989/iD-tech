@@ -1,6 +1,6 @@
-package com.idtech.item;
+package com.example.examplemod.item;
 
-import com.idtech.BaseMod;
+import com.example.examplemod.BaseMod;
 
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -81,12 +81,7 @@ public class ItemUtils {
      * @param itemTag an Item Tag indicating a group or type of item that can repair this armor material.
      * @return the built Armor Material
      */
-    public static ArmorMaterial buildArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountArrayIn, int enchantabilityIn, SoundEvent eqiupSoundIn,
-                                                   float toughnessIn, float knockbackResistanceIn, Tag<Item> itemTag){
-        Supplier<Ingredient> ingredientSupplier = () -> Ingredient.of(itemTag);
-        return buildArmorMaterial(nameIn, maxDamageFactorIn, damageReductionAmountArrayIn, enchantabilityIn, eqiupSoundIn, toughnessIn, knockbackResistanceIn, ingredientSupplier);
 
-    }
 
     /**
      * Builds a new custom armor material. Modelled exactly after Vanilla Mincraft armor material code.

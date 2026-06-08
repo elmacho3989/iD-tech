@@ -1,6 +1,6 @@
-package com.idtech.entity;
+package com.example.examplemod.entity;
 
-import com.idtech.BaseMod;
+import com.example.examplemod.BaseMod;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -16,12 +16,7 @@ public class SithEntity extends Zombie {
         super(type, level);
     }
 
-    public static EntityType<SithEntity> TYPE = (EntityType<SithEntity>)
-            EntityType.Builder.of(SithEntity::new, MobCategory.MONSTER)
-                    .build("sith")
-                    .setRegistryName(BaseMod.MODID, "sith");
 
-    public static Item EGG = EntityUtils.buildEntitySpawnEgg(TYPE,0x000000,0xBA0606);
 
     public static AttributeSupplier.Builder createAttributes(){
         return Monster.createMonsterAttributes().add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);

@@ -1,4 +1,4 @@
-package com.idtech.enchantment;
+package com.example.examplemod.enchantment;
 
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraftforge.event.RegistryEvent;
