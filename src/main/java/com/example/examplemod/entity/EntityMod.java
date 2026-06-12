@@ -1,7 +1,8 @@
 package com.example.examplemod.entity;
 
-import com.example.examplemod.BaseMod;
+
 import net.minecraft.resources.ResourceLocation;
+import com.example.examplemod.BaseMod;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
@@ -15,6 +16,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class EntityMod {
+
+
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITIES, BaseMod.MODID);
 
