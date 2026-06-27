@@ -12,11 +12,11 @@
   "adapt_noise": false,
 
   "spawn_overrides": {
-    "monster": {
+    "creature": {
       "bounding_box":"piece",
       "spawns":[
         {
-          "type": "examplemod:sith",
+          "type": "minecraft:parrot",
           "weight": 1,
           "minCount": 1,
           "maxCount": 4

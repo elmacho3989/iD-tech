@@ -31,5 +31,7 @@ public class ItemMod {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+
+
     }
 }
