@@ -1,11 +1,10 @@
 package com.example.examplemod;
 
-import com.example.examplemod.block.*;
-
-import com.example.examplemod.entity.*;
-import com.example.examplemod.item.*;
-
-//import com.example.examplemod.world.WorldMod;
+import com.example.examplemod.block.BlockMod;
+import com.example.examplemod.entity.EntityMod;
+import com.example.examplemod.entity.SithRenderer;
+import com.example.examplemod.item.ItemMod;
+import com.example.examplemod.structures.StructureMod;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -32,7 +31,7 @@ public class BaseMod {
 
     // Change your modid here. Whenever modid is needed, use BaseMod.MODID
     public static final String MODID = "examplemod";
-    private static final Logger LOGGER = LogManager.getLogger(BaseMod.MODID);
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public BaseMod() {
         IEventBus eBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -40,6 +39,7 @@ public class BaseMod {
         ItemMod.register(eBus);
         BlockMod.register(eBus);
         EntityMod.register(eBus);
+        StructureMod.register(eBus);
 
 
         // Register the setup method for modloading
