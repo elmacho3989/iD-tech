@@ -11,10 +11,6 @@ public class StructureMod {
     public static final DeferredRegister<StructureFeature<?>> DEFERRED_REGISTRY_STRUCTURE =
             DeferredRegister.create(ForgeRegistries.STRUCTURE_FEATURES, BaseMod.MODID);
 
-    /**
-     * Registers the base structure itself and sets what its path is. In this case,
-     * this base structure will have the resourcelocation of structure_tutorial:sky_structures.
-     */
     public static final RegistryObject<StructureFeature<?>> SKY_STRUCTURES =
             DEFERRED_REGISTRY_STRUCTURE.register("bespin_cloud_city", BespinCloudCityStructure::new);
 

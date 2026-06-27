@@ -55,7 +55,7 @@ public class BespinCloudCityStructure extends StructureFeature<JigsawConfigurati
      * Make sure to set the final boolean in JigsawPlacement.addPieces to false so
      * that the structure spawns at blockpos's y value instead of placing the structure on the Bedrock roof!
      *
-     * Also, please for the love of god, do not do dimension checking here.
+     * do not do dimension checking here.
      * If you do and another mod's dimension is trying to spawn your structure,
      * the locate command will make minecraft hang forever and break the game.
      * Use the biome tags for where to spawn the structure and users can datapack
@@ -101,9 +101,6 @@ public class BespinCloudCityStructure extends StructureFeature<JigsawConfigurati
          * Note, you are always free to make your own JigsawPlacement class and implementation of how the structure
          * should generate. It is tricky but extremely powerful if you are doing something that vanilla's jigsaw system cannot do.
          * Such as for example, forcing 3 pieces to always spawn every time, limiting how often a piece spawns, or remove the intersection limitation of pieces.
-         *
-         * An example of a custom JigsawPlacement.addPieces in action can be found here (warning, it is using Mojmap mappings):
-         * https://github.com/TelepathicGrunt/RepurposedStructures/blob/1.18.2/src/main/java/com/telepathicgrunt/repurposedstructures/world/structures/pieces/PieceLimitedJigsawManager.java
          */
 
         if (structurePiecesGenerator.isPresent()) {
